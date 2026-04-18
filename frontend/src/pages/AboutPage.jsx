@@ -37,12 +37,6 @@ export default function AboutPage() {
               <span className="badge">🎨 UI/UX Enthusiast</span>
               <span className="badge">📦 Cyber Security</span>
             </div>
-            <div style={{ marginTop: '2rem' }}>
-              <a href="https://github.com/Manjen1218" target="_blank" rel="noreferrer"
-                className="btn btn-ghost" style={{ width: '100%', justifyContent: 'center', marginBottom: '0.75rem' }}>
-                <span>🐙</span> GitHub Profile
-              </a>
-            </div>
           </aside>
 
           <div className="about-content">
@@ -81,14 +75,30 @@ export default function AboutPage() {
             </div>
 
             <div className="about-section">
-              <p className="section-label">Philosophy</p>
-              <h3>What I Believe In</h3>
+              <p className="section-label">What's More</p>
+              <h3>How AI Assists in Development?</h3>
               <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(200px, 1fr))', gap: '1rem' }}>
                 {[
-                  { icon: '✨', title: 'Clean Code', desc: 'Readability and simplicity over cleverness.' },
-                  { icon: '🚀', title: 'Ship It', desc: 'Done is better than perfect — iterate fast.' },
-                  { icon: '🤝', title: 'Collaborate', desc: 'Great products are built by great teams.' },
-                  { icon: '📚', title: 'Keep Learning', desc: 'Technology never stops — neither do I.' },
+                  { 
+                    icon: '💡', 
+                    title: 'AI for Frontend', 
+                    desc: 'You can prompt AI to generate UI components by simply describing what you need. For example, ask AI to "Create a responsive navigation bar in HTML and CSS" or "Generate a React component for a user profile page." With clear prompts, AI helps speed up design and development.'
+                  },
+                  { 
+                    icon: '⚙️', 
+                    title: 'AI for Backend', 
+                    desc: 'Backend tasks like API creation or database design can be automated with AI. A simple prompt like "Generate a REST API in Node.js with JWT authentication" or "Create a PostgreSQL schema for a blog" can save hours of coding and debugging.'
+                  },
+                  { 
+                    icon: '🤖', 
+                    title: 'Claude AI', 
+                    desc: 'Claude AI helps developers by providing suggestions, generating code, and debugging. You can interact with Claude by asking specific programming-related questions, such as "How do I implement user authentication in Express?"'
+                  },
+                  { 
+                    icon: '💻', 
+                    title: 'Automate Tasks', 
+                    desc: 'AI can automate repetitive tasks, like generating boilerplate code or creating test cases. Simply prompt AI with something like "Generate HTML for a basic webpage layout."'
+                  },
                 ].map((v) => (
                   <div key={v.title} className="card" style={{ padding: '1.25rem' }}>
                     <div style={{ fontSize: '1.5rem', marginBottom: '0.5rem' }}>{v.icon}</div>
