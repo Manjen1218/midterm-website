@@ -29,7 +29,7 @@ export default function AboutPage() {
               Man-Chen, Chao
             </h2>
             <p style={{ fontSize: '0.85rem', color: 'var(--text-muted)', marginBottom: '1rem' }}>
-              Software Developer · Taiwan 🇹🇼
+              r14921a44
             </p>
             <div className="badge-list">
               <span className="badge">🌐 Web Development</span>
